@@ -25,7 +25,7 @@ func FlattenData(unknown interface{}, data map[string]interface{}, key string, s
 		var dataSamples []interface{}
 		dataSamples = append(dataSamples, unknown...)
 		key = checkPluralSlice(key)
-		data[key+"FlexSampleXs"] = dataSamples
+		data[key+"FlexSampleABCs"] = dataSamples
 	case map[string]interface{}:
 		if api.SplitObjects { // split objects can only be used once
 			dataSamples := splitObjects(&unknown, api)
